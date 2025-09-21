@@ -97,7 +97,7 @@ img {
 
 body {
   font-family: var(--bs-body-font-family);
-  font-size: 18px;
+  font-size: 20px;
   margin: 0;
 }
 
@@ -137,9 +137,46 @@ a:hover {
   display: flex;
   align-items: center;
 }
+
 .site-title > span {
   font-size: 1rem;
   margin-left: 0.3em;
+}
+
+.global-header {
+  background-color: var(--bs-black);
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  align-items: center;
+  padding: .5rem;
+  font-weight: bold;
+}
+
+.global-header a {
+  text-decoration: none;
+  color: white;
+}
+
+.global-header__right {
+  display: flex;
+  align-items: center;
+}
+
+#global-nav-toggle {
+  background-color: var(--bs-black);
+  color: white;
+  border: 0;
+  border-left: 2px solid var(--bs-gray-800);
+  font-size: 1rem;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  padding-left: 1rem;
+}
+
+.search-icon {
+  padding-right: 1rem;
 }
 
 .logo {
@@ -150,6 +187,75 @@ a:hover {
   border-top: 34px solid var(--bs-light-green);
   border-left: 13px solid transparent;
   border-right: 13px solid transparent;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+}
+
+/* Hero Banner */
+.hero-img-container {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.hero-img-container img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  grid-column: 1/2;
+  grid-row: 1/3;
+}
+
+.hero-img-text {
+  grid-row: 2/3;
+  grid-column: 1/2;
+  display: flex;
+  align-items: center;
+  padding-left: 1rem;
+  color: white;
+  background-color: rgba(0, 0, 0, .7);
+}
+
+.hero-img-text a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.hero-img-text p {
+  display: flex;
+  flex-direction: column;
+  font-size: .8rem;
+  padding-left: 1rem;
+  font-weight: bold;
+}
+
+/* Park Banner */
+
+.park-banner {
+  background-color: var(--bs-black);
+  display: flex;
+  justify-content: center;
+}
+
+.park-banner a {
+  color: white;
+  text-decoration: none;
+  font-size: .8rem;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: .8rem 1rem;
+}
+
+/* Misc. */
+.disclaimer {
+  padding: 0 1rem;
 }
 
 /* Utility styles */
