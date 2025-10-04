@@ -253,6 +253,60 @@ a:hover {
   padding: .8rem 1rem;
 }
 
+/* Main (Intro/Info) */
+
+main > section {
+  padding: 1rem;
+}
+
+.intro p {
+  font-size: .8em;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.info > * {
+  flex: 1;
+}
+
+@media screen and (max-width: 630px) {
+  .info {
+    flex-direction: column;
+  }
+}
+
+.media-card a {
+  text-decoration: none;
+  color: black;
+}
+
+.media-card p {
+  font-size: .7em;
+}
+
+/* Footer */
+.park-footer {
+  background-image: url("../images/topo_pattern.png");
+  padding: 1rem;
+}
+
+.park-footer h3 {
+  text-transform: uppercase;
+}
+
+.park-footer * {
+  font-size: .8em;
+  line-height: 1;
+}
+
+.park-footer h4 {
+  margin-bottom: 0;
+}
+
 /* Misc. */
 .disclaimer {
   padding: 0 1rem;
