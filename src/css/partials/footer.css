@@ -1,0 +1,18 @@
+/* Footer */
+.park-footer {
+  background-image: url("../images/topo_pattern.png");
+  padding: 1rem;
+}
+
+.park-footer h3 {
+  text-transform: uppercase;
+}
+
+.park-footer * {
+  font-size: .8em;
+  line-height: 1;
+}
+
+.park-footer h4 {
+  margin-bottom: 0;
+}
